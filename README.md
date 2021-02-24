@@ -13,9 +13,9 @@
     <a href="https://pt-br.reactjs.org/">:runner: moveit</a>
 </h1>
 <p align="center">
-    Projeto tem como objetivo resgistrar os estudos da Next Level Week fronecida pela [Rocketseat](https://rocketseat.com.br/). O aplicativo foi baseado no método Pomodoro, utilizando as pausas nos ciclos para realizar exercicíos físicos e com os olhos.
+    Projeto tem como objetivo resgistrar os estudos da Next Level Week fronecida pela [Rocketseat](https://rocketseat.com.br). O aplicativo foi baseado no método Pomodoro, utilizando as pausas nos ciclos para realizar exercicíos físicos e com os olhos.
     <br><br>
-    O projeto está hospedado na [Vercel](https://vercel.com/) e pode ser acessado o site: [Move.it]
+    O projeto está hospedado na [Vercel](https://vercel.com) e pode ser acessado o site: [Move.it]
 </p>
 
 <h4 align="center"> 
