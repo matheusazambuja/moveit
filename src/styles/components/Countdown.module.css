@@ -6,6 +6,10 @@
     color: var(--title);
 }
 
+.countdownContainer > span {
+    color: var(--white);
+}
+
 .countdownContainer > div {
     flex: 1;
 

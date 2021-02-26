@@ -13,29 +13,27 @@
     <a href="https://pt-br.reactjs.org/">:runner: moveit</a>
 </h1>
 
-Select Language: **English**, [Portuguese]('/README-pt.md')
-
-This project want to register the next level week's studies by [Rocketseat](https://rocketseat.com.br). The application was based on Pomodoro's method, using the pauses on the job's circles to do physical exercises and exercises to eyes relieve.
+Projeto tem como objetivo resgistrar os estudos da Next Level Week fronecida pela [Rocketseat](https://rocketseat.com.br). O aplicativo foi baseado no método Pomodoro, utilizando as pausas nos ciclos para realizar exercicíos físicos e com os olhos.
 <br><br>
-The project is hosted by [Vercel](https://vercel.com) and can be visited on [Move.it](https://moveit-matheusazambuja.vercel.app/)
-
+O projeto está hospedado na [Vercel](https://vercel.com) e pode ser acessado o site: [Move.it](https://moveit-matheusazambuja.vercel.app/)
 
 <h4 align="center"> 
 	🚧  React Select 🚀 Em construção...  🚧
 </h4>
 
-Table of Contents
+Tabela de Conteúdos
 =================
 <!--ts-->
-   * [Technologies](#-technologies)
+   * [Tecnologias](#-tecnologias)
    * [Getting Started](#-getting-started)
-   * [Dependencies](#-dependencies)
-   * [License](#-license)
-   * [Author](#-author)
+   * [Dependências](#-dependências)
+   * [Licença](#-licença)
+   * [Autor](#-autor)
 <!--te-->
 
-### 🛠 Technologies
-The following tools were used to build this projetc:
+
+### 🛠 Tecnologias
+As seguintes ferramentas foram usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
 - [Next.JS](https://nextjs.org/)
@@ -43,9 +41,9 @@ The following tools were used to build this projetc:
 
 ### 🚀 Getting Started
 
-Before we get started, you need to check if you have on your PC the following tools: 
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
-Beside that we recommend you have a good editor to work with the [VSCode](https://code.visualstudio.com/)
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 
 ```bash
@@ -53,34 +51,22 @@ Beside that we recommend you have a good editor to work with the [VSCode](https:
 $ git clone https://github.com/matheusazambuja/moveit
 ```
 
-
-## Dependencies
-Install all the following project's dependencies to be able to start the application on your PC.
+## Dependências
+Instale todas as seguintes dependências do projeto para ser capaz de iniciar aplicação na sua máquina.
 ```bash
 # - Yarn
 yarn install
 ```
-or
+ou
 ```bash
 # - NPM
 npm install
 ```
 
 ## Starting
-To start the application, use the following command:
+Para iniciar a aplicação utilize o comando:
 
-```bash
-# - If you have installed Yarn
-yarn dev
-
-# -If you have installed NPM
-npm run dev
-# or
-npm dev
-```
-
-The application will run for pattern on route: [localhost:3000](http://localhost:3000)
-
+A aplicação irá rodar por padrão na rota: [localhost:3000](http://localhost:3000)
 
 ### 🤵🏿 Author
 ---
@@ -89,7 +75,7 @@ The application will run for pattern on route: [localhost:3000](http://localhost
     <sub><b>Matheus Azambuja</b></sub> 🚀
 </div>
 <br>
-Made with ❤️ by Matheus Azambuja 👋🏿 contact me!
+Feito com ❤️ por Matheus Azambuja 👋🏿 Entre em contato!
 <br><br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-MatheusAzambuja-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/matheus-azambuja-9197411a1//)](https://https://www.linkedin.com/in/matheus-azambuja-9197411a1//)
