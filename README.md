@@ -13,7 +13,7 @@
     <a href="https://pt-br.reactjs.org/">:runner: moveit</a>
 </h1>
 
-Select Language: **English**, [Portuguese]('/README-pt.md')
+Select Language: **English**, [Portuguese](README-pt.md)
 
 This project want to register the next level week's studies by [Rocketseat](https://rocketseat.com.br). The application was based on Pomodoro's method, using the pauses on the job's circles to do physical exercises and exercises to eyes relieve.
 <br><br>
