@@ -78,8 +78,6 @@ export function ChallengesProvider({
             ]
 
             const textChallengeSelected = typeChallenges.find(c => c.type === challenge.type).text
-
-            console.log(textChallengeSelected)
             
             new Notification(`Novo desafio ${textChallengeSelected}`, {
                 body: `Faça e ganhe ${challenge.amount}xp!`,
