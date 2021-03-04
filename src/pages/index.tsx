@@ -82,7 +82,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   // Chamada API
   const { level, currentExperience, challengesCompleted, iat, expiration } = ctx.req.cookies
 
-  console.log(level, currentExperience)
   return {
     props: {
       level: Number(level),

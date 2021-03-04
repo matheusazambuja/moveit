@@ -48,8 +48,6 @@ export function ChallengesProvider({
     const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
     const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false)
 
-    console.log(process.env.GITHUB_CLIENT_SECRET)
-
     useEffect(() => {
         Notification.requestPermission()
     }, [])
