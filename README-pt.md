@@ -38,6 +38,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React](https://pt-br.reactjs.org/)
 - [Next.JS](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [ChakraUI](https://chakra-ui.com/)
 
 ### 🚀 Getting Started
 

@@ -40,6 +40,7 @@ The following tools were used to build this projetc:
 - [React](https://pt-br.reactjs.org/)
 - [Next.JS](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [ChakraUI](https://chakra-ui.com/)
 
 ### 🚀 Getting Started
 
