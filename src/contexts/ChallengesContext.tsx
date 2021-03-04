@@ -1,5 +1,9 @@
 import { createContext, useState, ReactNode, useEffect } from 'react'
+import { useSession } from 'next-auth/client'
+
 import Cookies from 'js-cookie'
+import jwt from 'jwt-simple'
+
 import challenges from '../../challenges.json'
 import { LevelUpModal } from '../components/levelUpModal'
 
@@ -44,14 +48,24 @@ export function ChallengesProvider({
     const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
     const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false)
 
+    console.log(process.env.GITHUB_CLIENT_SECRET)
+
     useEffect(() => {
         Notification.requestPermission()
     }, [])
 
     useEffect(() => {
-        Cookies.set('level', level.toString())
-        Cookies.set('currentExperience', currentExperience.toString())
-        Cookies.set('challengesCompleted', challengesCompleted.toString())
+        const now = Math.floor(Date.now() / 1000)
+        const payload = {
+            level: level.toString(),
+            currentExperience: currentExperience.toString(),
+            challengesCompleted: challengesCompleted.toString(),
+            iat: now,
+            expiration: now + (60 * 60 * 24 * 2)
+        }
+        Cookies.set('infoUser', JSON.stringify({
+            ...payload
+        }))
     }, [level, currentExperience, challengesCompleted])
 
     function levelUp() {
