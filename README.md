@@ -35,7 +35,7 @@ Table of Contents
 <!--te-->
 
 ### 🛠 Technologies
-The following tools were used to build this projetc:
+The following tools were used to build this project:
 
 - [React](https://pt-br.reactjs.org/)
 - [Next.JS](https://nextjs.org/)
