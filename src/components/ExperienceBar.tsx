@@ -13,42 +13,50 @@ export function ExperienceBar() {
     return (
         <Box as="div"
             display="flex"
+
             alignItems="center"
             marginBottom="1rem"
         >
             <Text as="span" 
-                fontSize="1rem"
                 color={zeroNextLevelExpTextColorMode}
-            >0 px</Text>
+                fontSize="1rem"
+            >
+                0 px
+            </Text>
             <Box as="div"
                 flex="1"
                 height="4px"
-                borderRadius="4px"
+
                 background='gray.330'
+                borderRadius="4px"
                 margin="0 1.5rem"
+
                 position="relative"
             >
                 <Box as="div"
                     position="absolute"
-                    width={ `${percentToNextLevel}%` }
                     height="4px"
-                    borderRadius="4px"
+                    width={ `${percentToNextLevel}%` }
+
                     background='green.400'
+                    borderRadius="4px"
                 >
                 </Box>
                 <Text as="span"
                     position="absolute"
-                    top="12px"
-                    transform="translateX(-50%)"
                     left={ `${percentToNextLevel}%` }
-                    fontWeight='bold'
+                    top="12px"
+
                     color="green.400"
+                    fontWeight='bold'
+                    transform="translateX(-50%)"
                 >
                     {currentExperience} xp
                 </Text>
             </Box>
             <Text as="span"
                 display="flex"
+
                 alignItems="flex-end"
                 color={zeroNextLevelExpTextColorMode}
             >

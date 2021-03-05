@@ -13,7 +13,8 @@ export function Countdown() {
         hasFinished,
         isActive,
         startCountdown,
-        resetCountdown} = useContext(CountdownContext)
+        resetCountdown
+    } = useContext(CountdownContext)
 
     const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('')
     const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('')
@@ -42,10 +43,8 @@ export function Countdown() {
 
         border: "0",
         borderRadius: "5px",
-
         background: "blue.600",
         color: "white",
-
         fontSize: "1.25rem",
         fontWeight: "bold",
 
@@ -60,23 +59,25 @@ export function Countdown() {
                 fontWeight="400"
                 color="blue.800"
             >
-                <Flex as="div" style={styleDivs}
-                    transition="all 200ms"
-                >
+                <Flex as="div" style={styleDivs} transition="all 200ms" >
                     <Text as="span" 
                         flex="1"
+
                         borderRight={`${countdownBorderSize} solid gray.100`}
                         fontSize="7rem"
                         color={countdownTextColor}
+
                         transition="all 200ms"
                     >
                         {minuteLeft}
                     </Text>
                     <Text as="span" 
                         flex="1"
+
                         borderLeft={`${countdownBorderSize} solid gray.100`}
                         fontSize="7rem"
                         color={countdownTextColor}
+
                         transition="all 200ms"
                     >
                         {minuteRight}
@@ -85,6 +86,7 @@ export function Countdown() {
                 <Text as="span"
                     fontSize="7rem"
                     color={countdownTextColor}
+
                     transition="all 200ms"
                 >
                     :
@@ -92,18 +94,22 @@ export function Countdown() {
                 <Flex as="div" style={styleDivs}>
                     <Text as="span" 
                         flex="1"
+
                         borderRight={`${countdownBorderSize} solid gray.100`}
-                        fontSize="7rem"
                         color={countdownTextColor}
+                        fontSize="7rem"
+
                         transition="all 200ms"
                     >
                         {secondLeft}
                     </Text>
                     <Text as="span" 
                         flex="1"
+
                         borderLeft={`${countdownBorderSize} solid gray.100`}
-                        fontSize="7rem"
                         color={countdownTextColor}
+                        fontSize="7rem"
+
                         transition="all 200ms"
                     >
                         {secondRight}
@@ -112,7 +118,6 @@ export function Countdown() {
             </Flex>
             { hasFinished ? (
                 <Box as='button' disabled
-                    type="button"
                     {...styleButton}
                     _disabled={{
                         background: "gray.900",
@@ -126,7 +131,6 @@ export function Countdown() {
                 <>
                     { isActive ? (
                         <Box as='button' onClick={resetCountdown}
-                            type="button"
                             {...styleButton}
                             background="white"
                             color="gray.900"
@@ -139,7 +143,6 @@ export function Countdown() {
                         </Box>
                         ) : (
                             <Box as='button' onClick={startCountdown}
-                                type="button"
                                 {...styleButton}
                                 _hover={{ background: "blue.620" }}
                             >

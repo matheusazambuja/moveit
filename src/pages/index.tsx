@@ -38,24 +38,23 @@ export default function App(props: HomeProps) {
         <Head>
             <title>Início | move.it</title>
         </Head>
-        <Box as="div"
-          display="flex"
-        >
+        <Box as="div" display="flex" >
           <SideNavBar />
-          <Flex as="div"
+          <Flex as="div" direction="column"
             height="100vh"
             maxWidth="992px"
+
             margin="0 auto"
             padding="2.5rem 2.5rem"
-            direction="column"
           >
             <ExperienceBar></ExperienceBar>
     
             <CountdownProvider>
               <Grid as="section"
                 flex="1"
-                templateColumns="1fr 1fr"
                 gap="6.25rem"
+                templateColumns="1fr 1fr"
+
                 alignContent="center"
               >
                 <Box as="div">
@@ -63,9 +62,7 @@ export default function App(props: HomeProps) {
                   <CompletedChallenges />
                   <Countdown />
                 </Box>
-                <Box as="div"
-                  background={backgroundMode}
-                >
+                <Box as="div" background={backgroundMode} >
                   <ChallengeBox />
                 </Box>
               </Grid>

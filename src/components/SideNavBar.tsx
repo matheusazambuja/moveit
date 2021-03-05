@@ -10,21 +10,18 @@ export default function SideNavBar() {
   const iconLogoutMode = useColorModeValue('Dark', 'Light')
 
   return (
-    <Flex as="nav" direction="column"
+    <Flex as="nav" 
+      direction="column"
       alignItems="center"
       justifyContent="space-between"
-      // background=
+
       boxShadow="0 0 60px rbga(0, 0, 0, 0.05)"
       padding="0 1rem"
     >
-      <Box as="div"
-        marginTop="2rem"
-      >
+      <Box as="div" marginTop="2rem" >
         <Img src={`/icons/logo.svg`} alt="Logo" />
       </Box>
-      <Flex as="nav"
-        direction="column"
-      >
+      <Flex as="nav" direction="column" >
         <Link href="/"
           fontSize="2rem"
           margin="0.7rem 0"
@@ -53,10 +50,9 @@ export default function SideNavBar() {
         </Link>
       </Flex>
       <Link onClick={() => signOut()}
+        fontSize="2rem"
         margin="0.7rem 0"
         marginBottom="2rem"
-
-        fontSize="2rem"
 
         transition="color 200ms"
         _hover={{

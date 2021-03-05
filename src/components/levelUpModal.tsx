@@ -14,51 +14,55 @@ export function LevelUpModal() {
 
   return (
     <Flex
-      background={backgroundOverlayMode}
       position="fixed"
       top="0"
       bottom="0"
-      left="0"
       right="0"
+      left="0"
 
-      justifyContent="center"
+      background={backgroundOverlayMode}
+
       alignItems="center"
+      justifyContent="center"
     >
       <Box as='div'
-        background={backgroundColorMode}
+        position="relative"
         width="100%"
         maxWidth="400px"
-        padding="2rem 3rem"
+
+        background={backgroundColorMode}
         borderRadius="5px"
         boxShadow="0 0 60px rgba(0, 0, 0, 0.28)"
+        padding="2rem 3rem"
+
         textAlign="center"
-        position="relative"
       >
         <Box as='header' 
+          background="url('/icons/levelUp.svg') no-repeat center"
+          color={textColorHeaderMode}
           fontSize="8.75rem"
           fontWeight="600"
-          color={textColorHeaderMode}
-          background="url('/icons/levelUp.svg') no-repeat center"
         >
           {level}
         </Box>
         <Text as="strong"
-          fontSize="2.25rem"
           color={textColorCongratulation}
+          fontSize="2.25rem"
         >
           Parabéns
         </Text>
         <Text as="p"
-          fontSize="1.25rem"
           color={textColorMode}
+          fontSize="1.25rem"
           marginTop="0.25rem"
         >
           Você alcançou um novo level.
         </Text>
         <Button onClick={closeLevelUpModal}
           position="absolute"
-          right="0.5rem"
           top="0.5rem"
+          right="0.5rem"
+
           border="0"
           fontSize="0"
         >

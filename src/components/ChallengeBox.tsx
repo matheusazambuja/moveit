@@ -1,14 +1,13 @@
-import { Box, Button, Flex, Grid, Img, Text, useColorModeValue } from '@chakra-ui/react'
 import { useContext } from 'react'
+import { Box, Flex, Grid, Img, Text, useColorModeValue } from '@chakra-ui/react'
 import { ChallengesContext } from '../contexts/ChallengesContext'
 import { CountdownContext } from '../contexts/CountdownContext'
 
 export function ChallengeBox () {
-
     const textColorNewChallengeMode = useColorModeValue('blue.800', 'white')
 
     const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext)
-    const { resetCountdown, isActive } = useContext(CountdownContext)
+    const { resetCountdown } = useContext(CountdownContext)
 
     function handleChallengeSucceeded() {
         completeChallenge()
@@ -29,9 +28,7 @@ export function ChallengeBox () {
 
         border: "0",
         borderRadius: "5px",
-
         color: "white",
-
         fontSize: "1rem",
         fontWeight: "600",
 
@@ -54,15 +51,16 @@ export function ChallengeBox () {
         >
             { activeChallenge ? (
                 <Flex as="div"
-                    height="100%"
                     direction="column"
+
+                    height="100%"
                 >
                     <Box as="header"
+                        borderBottom="1px solid gray.330"
                         color="blue.600"
                         fontWeight="600"
                         fontSize="1.25rem"
                         padding="0 2rem 1.5rem"
-                        borderBottom="1px solid gray.330"
                     >
                         Ganhe { activeChallenge.amount } xp
                     </Box>
@@ -75,38 +73,31 @@ export function ChallengeBox () {
                     >
                         <Img src={`icons/${ activeChallenge.type }.svg`} />
                         <Text as="strong"
+                            color={textColorNewChallengeMode}
                             fontSize="2rem"
                             fontWeight="600"
-                            color={textColorNewChallengeMode}
                             margin="1.5rem 0 1rem"
                         >
                             Novo desafio
                         </Text>
-                        <Text as="p"
-                            lineHeight="1.5"
-                        >
+                        <Text as="p" lineHeight="1.5" >
                             { activeChallenge.description }
                         </Text>
                     </Flex>
 
-                    <Grid as="footer"
-                        templateColumns="repeat(2, 1fr)"
-                        gap="1rem"
-                    >
-                        <Box as='button'
+                    <Grid as="footer" templateColumns="repeat(2, 1fr)" gap="1rem" >
+                        <Box as='button' onClick={handleChallengeFailed}
                             {...styleButtonActive}
                             background="red.600"
-                            onClick={handleChallengeFailed}
                             _hover={{
                                 filter: 'brightness(0.8)'
                             }}
                         >
                             Falhei
                         </Box>
-                        <Box as='button'
+                        <Box as='button' onClick={handleChallengeSucceeded}
                             {...styleButtonActive}
                             background="green.400"
-                            onClick={handleChallengeSucceeded}
                             _hover={{
                                 filter: 'brightness(0.8)'
                             }}
@@ -129,14 +120,15 @@ export function ChallengeBox () {
                     </Text>
                     <Text as="p"
                         display="flex"
+
                         flexDirection="column"
                         alignItems="center"
+
                         lineHeight="1.4"
                         maxWidth="70%"
                         marginTop="3rem"
                     >
-                        <Img src="icons/level-up.svg" alt="Level Up"
-                            marginBottom="2rem" />
+                        <Img src="icons/level-up.svg" alt="Level Up" marginBottom="2rem" />
                         Avance de level completando desafios
                     </Text>
                 </Flex>

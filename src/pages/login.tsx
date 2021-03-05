@@ -14,10 +14,12 @@ export default function Login() {
       { !session && (
         <Flex as='div'
           height='100vh'
-          background='blue.600'
-          padding='0 0rem'
+
           alignItems='center'
           justifyContent='center'
+
+          background='blue.600'
+          padding='0 0rem'
         >
           <Head>
             <title>Login | move.it</title>
@@ -29,9 +31,7 @@ export default function Login() {
             </header>
           </Box>
 
-          <Box as='div'
-            marginRight='15rem'
-          >
+          <Box as='div' marginRight='15rem' >
             <Img src="logo-full.svg" alt="Logo" />
             <Text as='strong'
               color='white'
@@ -43,26 +43,22 @@ export default function Login() {
 
             <Flex as='div'
               width='17rem'
-              color='white'
-              filter='brightness(0.8)'
-
-              marginTop='1rem'
-              marginBottom='2.6rem'
 
               alignItems='center'
               justifyContent='center'
+
+              color='white'
+              filter='brightness(0.8)'
+              marginTop='1rem'
+              marginBottom='2.6rem'
             >
               <Img src="github-light.png" alt="Github Logo" marginTop='0.5rem' />
-              <Text as='p'
-                paddingLeft='1.2rem'
-              >
+              <Text as='p' paddingLeft='1.2rem' >
                 Faça login com seu Github para começar
               </Text>
             </Flex>
 
-            <Flex as='div'
-              alignItems='center'
-            >
+            <Flex as='div' alignItems='center' >
               <Button onClick={(): Promise<void> => signIn('github')}
                 width='7rem'
                 height='3.5rem'
@@ -81,7 +77,6 @@ export default function Login() {
               </Button>
             </Flex>
           </Box>
-
         </Flex>
       )}
     </>
